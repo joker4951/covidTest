@@ -311,6 +311,10 @@ tr:hover {
 	background: #ddd;
 }
 
+.text-wrap{
+    white-space: normal;
+}
+
 .dataTable {
 	width: 100%;
 }

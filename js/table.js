@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var table = $('#myTable').DataTable( {
+  	scrollX: true,
 	'dom': "lrtip"
 	} );
+
 
   $("#search-bar").val('');
 
