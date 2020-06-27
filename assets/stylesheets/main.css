@@ -1,0 +1,320 @@
+/*
+  ====================================
+  Reset
+  ====================================
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ====================================
+  Custom Styles
+  ====================================
+*/
+
+body {
+	background: #333;
+	color: #eee;
+	font: 300 14px/20px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ====================================
+  Grid Styles
+  ====================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ====================================
+  Rows
+  ====================================
+*/
+
+.row {
+	background: #fff;
+	padding: 60px 0 40px 0;
+	color: #444;
+}
+
+.row-alt {
+  background: #b3b3b3;
+  background: -webkit-linear-gradient(to right, #e6e6e6, #a6a6a6);
+  background: -moz-linear-gradient(to right, #e6e6e6, #a6a6a6);
+  background: linear-gradient(to right, #e6e6e6, #a6a6a6);
+  padding: 40px 0 20px 0;
+  color: #333;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+/*
+  ====================================
+  Links
+  ====================================
+*/
+
+a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/*
+  ====================================
+  Primary Header
+  ====================================
+*/
+
+.primary-header {
+	margin-bottom: 10px;
+}
+
+.primary-header img {
+	height: 66px;
+	width: 66px;
+	margin-top: 10px;
+}
+
+.topside {
+	min-width: 560px;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.logo {
+	float: left;
+	min-height: 90px;
+	width: 75%;
+}
+
+.logo a,
+.logo a:hover {
+	color: #ddd;
+	font-weight: 500;
+	font-size: 66px;
+}
+
+.logo code {
+	color: #ff5c33;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.sponsor {
+	float: right;
+	text-align: right;
+	padding-top: 46px;
+	width: 25%;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+	text-align: center;
+	line-height: 30px;
+}
+
+.nav li {
+	display: inline-block;
+	width: 25%;
+}
+
+.nav a {
+	display: block;
+}
+
+.nav a:hover {
+	background: #aaa;
+	color: #222;
+}
+
+.nav a.page-select {
+	background: #ccc;
+	color: #333;
+}
+
+/*
+  ========================================
+  Search
+  ========================================
+*/
+
+.search {
+	margin: 20px 0;
+	min-width: 560px;
+}
+
+.search-bar,
+.search-btn {
+	display: inline-block;
+	height: 40px;
+	vertical-align: top;
+}
+
+.search-bar {
+	width: 90%;
+}
+
+.search-btn {
+	border: 1px solid #666;
+	width: 10%;
+	background: url(icons/search.png), #f63;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+table {
+	margin-bottom: 40px;
+	text-align: center;
+	border: 2px solid #999;
+	border-radius: 10px;
+	
+}
+
+table:last-child {
+	margin-bottom: 0;
+}
+
+th,
+td {
+	padding-bottom: 10px;
+	vertical-align: center;
+	line-height: 3;
+}
+
+tr {
+	border: 1px solid #ccc;
+}
+
+tr:hover {
+	background: #ddd;
+}
+
+.dataTable {
+	width: 100%;
+}
+
+thead,tbody,tfoot,
+.dateTable,
+.dataTables_wrapper {
+	min-width: 560px;
+}
+#myTable_paginate,
+.dataTables_info,
+.dataTables_length label {
+	display: block;
+	text-align: center;
+
+}
+
+.dataTables_length label {
+	border-radius: 5px;
+	padding: 5px 0;
+	background: #555;
+	color: #eee;
+	font: italic 300 18px "Roboto", Helvetica, sans-serif;
+}
+
+.dataTables_info {
+
+}
